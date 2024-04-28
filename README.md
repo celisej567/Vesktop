@@ -67,9 +67,6 @@ cd Vesktop
 # Install Dependencies
 pnpm i
 
-# Either run it without packaging
-pnpm start
-
 # Or package
 pnpm package
 # Or only build the pacman target
