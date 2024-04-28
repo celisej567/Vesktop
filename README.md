@@ -61,6 +61,12 @@ Below you can find unofficial packages created by the community. They are not of
 Packaging will create builds in the dist/ folder
 
 ```sh
+#tested on Ubuntu 24.04
+sudo apt install npm
+
+#install pnpm if you dont have it.
+sudo npm install -g @pnpm/exe
+
 git clone https://github.com/Vencord/Vesktop
 cd Vesktop
 
@@ -70,7 +76,7 @@ pnpm i
 # Or package
 pnpm package
 # Or only build the pacman target
-pnpm package --linux pacman
+pnpm package --linux deb
 # Or package to a directory only
 pnpm package:dir
 ```
