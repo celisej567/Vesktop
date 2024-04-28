@@ -73,9 +73,16 @@ cd Vesktop
 # Install Dependencies
 pnpm i
 
+# if you are getting ERR_PNPM_BAD_PM_VERSION error type this
+pnpm config set user-agent=pnpm/[type your pnpm version] npm/? node/v[type your nodejs version] linux x64
+# then repeat "Install Dependencies"
+
+# now build your app
+pnpm install
+
 # Or package
 pnpm package
-# Or only build the pacman target
+# Or only build the debian target
 pnpm package --linux deb
 # Or package to a directory only
 pnpm package:dir
